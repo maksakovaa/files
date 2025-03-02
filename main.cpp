@@ -12,12 +12,17 @@ void saveObj()
     temp.saveObj("test.obj");
 }
 
-int main()
+void loadObj()
 {
-    saveObj();
     Object test;
     std::cout << test.getName() << " " << test.getItemCount() << std::endl;
     test.loadObj("test.obj");
     std::cout << test.getName() << " " << test.getItemCount() << std::endl;
+}
+
+int main()
+{
+    saveObj();
+    loadObj();
     return 0;
 }
